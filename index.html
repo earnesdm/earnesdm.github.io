@@ -23,14 +23,14 @@
                   David Earnest
                 </p>
                 <p>
-                  Hi! I'm David. I'm interested in building exciting software products that improve people's lives.
+                  Hi! I'm David. I'm interested in building exciting software products that improve peoples lives.
                 </p>
                 <p>
                   Just recently, I received my bachelor's degree in Computer Science from the University of Cincinnati. Previously, I have interned at Siemens PLM Software and Northrop Grumman.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:earnesdm@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/David_Earnest_Resume_Jul24_2024.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="data/David_Earnest_Resume_Jan2_2025.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://github.com/earnesdm/">Github</a>
                 </p>
               </td>
@@ -44,7 +44,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Projects</h2>
                 <p>
-                  I have completed a few projects related to artificial intelligence. Currently, I'm working on projects in deep offline reinforcement learning.
+                  I have completely few of projects related to artificial intelligence. Currently, I'm working on projects in deep offline reinforcement learning.
                 </p>
               </td>
             </tr>
@@ -52,6 +52,44 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="lenet_stop()" onmouseover="lenet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lenet_image'><video  width=100% muted autoplay loop>
+                  <source src="images/LeNet.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video></div>
+                <img src='images/LeNet_demo_4.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function lenet_start() {
+                  document.getElementById('lenet_image').style.opacity = "1";
+                }
+
+                function lenet_stop() {
+                  document.getElementById('lenet_image').style.opacity = "0";
+                }
+                lenet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/earnesdm/Python-Final">
+                <span class="papertitle">Interactive LeNet</span>
+              </a>
+              <br>
+              <strong>David Earnest</strong>
+              <br>
+              2024
+              <br>
+              <a href="https://github.com/earnesdm/Interactive-LeNet-Demo/tree/main">code</a>
+              /
+              <a href="https://youtube.com/shorts/avoPbmiHj-U">video</a>
+              <p></p>
+              <p>
+                A interactive program that lets you draw digits (0-9) with you mouse and send them to a trained LeNet model which predicts the digit given the raw pixels.
+              </p>
+            </td>
+          </tr>
 
     <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -83,6 +121,8 @@
         2019
         <br>
         <a href="https://github.com/earnesdm/Python-Final">code</a>
+        /
+        <a href="https://youtube.com/shorts/w7yqOcN8NwA?feature=share">video</a>
         <p></p>
         <p>
         A simple checkers AI that will play against you using the Minimax algorithm. The approach here is roughly similar to IBM's Deep Blue chess AI.
@@ -164,7 +204,7 @@
       <a href="data/Deep%20Learning%20Project.pdf">paper</a>
       <p></p>
       <p>
-      A simple class project that I did for my deep learning class.
+      A simple class project that I did for my deep learning class. A bidirectional LSTM and U-Net style model to predict proton-proton collision points in LHC experiments.
       </p>
     </td>
   </tr>
